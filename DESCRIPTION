@@ -1,0 +1,38 @@
+Package: gingiva_analysis
+Version: 4.2.1
+Date: 2022-11-02
+Title: Tools for AMC and SMC samples analysis
+Description: A toolkit for analysis and exploration of RNA sequencing and microarray data of AMC and SMC samples.
+Authors@R: c(
+  person(given = "Mikhail", family = "Raevskiy", email = "raevskii.mm@phystech.edu", role = "ctb", comment = c(ORCID = "0000-0003-3608-0463")),
+  )
+URL: https://github.com/raevskymichail/gingiva_analysis/
+BugReports: https://github.com/raevskymichail/gingiva_analysis/issues
+Depends: R (>= 4.0.0), methods
+Imports: cluster, fitdistrplus, future, future.apply, ggplot2
+        (>= 3.3.0), ggrepel, ggridges, graphics, grDevices, grid, httr,
+        ica, igraph, irlba, jsonlite, KernSmooth, leiden (>= 0.3.1),
+        lmtest, Matrix (>= 1.5-0), matrixStats,
+        patchwork, pbapply, plotly (>= 4.9.0), png, RANN, RColorBrewer,
+        Rcpp (>= 1.0.7), RcppAnnoy (>= 0.0.18), reticulate, rlang,
+        ROCR, scales, scattermore (>= 0.7), spatstat.explore,
+        spatstat.geom, stats, tibble, tools, utils, uwot (>= 0.1.14)
+LinkingTo: Rcpp (>= 0.11.0), RcppEigen, RcppProgress
+License: Apache 2.0 + file LICENSE
+LazyData: true
+Collate: 'RcppExports.R' 'reexports.R' 'generics.R' 'clustering.R'
+        'visualization.R' 'convenience.R' 'data.R'
+        'differential_expression.R'
+        'integration.R' 'mixscape.R' 'objects.R' 'preprocessing.R'
+        'tree.R' 'utilities.R'
+RoxygenNote: 7.2.1
+Encoding: UTF-8
+Suggests: ape, rsvd, testthat, hdf5r, S4Vectors, SummarizedExperiment,
+        DESeq2, BiocGenerics, rtracklayer, Rfast2, Biobase, metap,
+        enrichR, mixtools, ggrastr
+NeedsCompilation: yes
+Packaged: 2022-11-02 21:31:02 UTC; hartmana
+Author: Mikhail Raevskiy [ctb] (<https://orcid.org/0000-0003-3608-0463>)
+Maintainer: Mikhail Raevskiy <raevskii.mm@phystech.edu>
+Repository: CRAN
+Date/Publication: 2022-11-02 00:00:02 UTC
